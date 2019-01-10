@@ -10,6 +10,8 @@ output "random" {
   value = "${random_id.random.hex}"
 }
 
-output "sensitive" {
+variable "test_var" { }
+
+output "no_good" {
   value = "${var.test_var}"
 }
