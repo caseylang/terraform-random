@@ -9,3 +9,7 @@ resource "random_id" "random" {
 output "random" {
   value = "${random_id.random.hex}"
 }
+
+output "sensitive" {
+  value = "${var.test_var}"
+}
